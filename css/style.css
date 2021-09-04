@@ -1,0 +1,730 @@
+body{
+	/*background-color: #2A2A2A;*/
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(90deg, rgba(42,42,42,1) 56%, rgba(245,175,49,0.9500175070028011) 56%);
+}
+
+/*HIDDEN SCROLL*/
+::-webkit-scrollbar {
+	display: none;
+}
+
+/*SCROLL UP*/
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/arrowUp.svg);
+
+}
+
+/*=============================================
+=          SECTION HOME     =
+=============================================*/
+
+#sectionHome{
+       margin-bottom: 0rem !important;
+}
+
+
+header .navbar{
+	float: right;
+}
+header ul li {
+	margin-left: 20px;
+}
+.leftHome{
+	height: 100vh
+	background-position: center;
+	margin-top: 40vh;
+}
+
+.leftHome h1{
+	color: #f5af31;
+	font-size: 10vh;
+}
+.leftHome h5{
+	text-align: left;
+}
+
+.rightHome img{
+	width: 11rem;
+	background-position: center;
+	margin-top: 5rem;
+	margin-left: 9rem;
+}
+
+/*=============================================
+=          SECTION ABOUT ME     =
+=============================================*/
+#sectionAboutMe{
+	background: #2F2F2F;
+}
+
+.leftAbout img{
+    width: 17rem;
+    position: absolute;
+    z-index: 1;
+    margin-left: 10rem !important;
+    margin-top: 0rem;
+    border: 5px solid #3D3D3D;
+}
+.leftAbout, .rightAbout{
+	margin-top: 20vh;
+	margin-bottom: 20vh;
+}
+.leftAbout .marco{
+    border: 7px solid #F5AF31;
+    height: 22rem;
+    width: 18rem;
+    position: absolute;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+.rightAbout button{
+	color: #F5AF31;
+	border-color: #F5AF31;
+}
+.rightAbout .col-1 hr{
+	background-color: #F5AF31;
+	margin-left: -1rem;
+}
+.rightAbout p{
+	width: 85%;	
+	text-align: justify;
+}
+.rightAbout img {
+	width: 30px;
+	margin-left: 2rem;
+}
+/*=============================================
+=          SECTION MY SKILLS     =
+=============================================*/
+#sectionSkills{
+	background: #2A2A2A;
+}
+
+#circleBar{
+	margin-top: 18px;
+	text-align: center;
+}
+
+#circleBar .round{
+	min-height: 255px;
+	margin-top: 30px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#circleBar .round strong{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	transform: translate(-50%);
+	font-size: 40px;
+	color: white;
+	font-weight: 400;
+}
+
+#circleBar span{
+	color: white;
+	font-size: 17px;
+	margin-top: 10px;
+	display: block;
+}
+
+#circleBar span i{
+	color: #F5AF31;
+	font-size: 22px;
+	margin-right: 7px;
+}
+#circleBar button{
+	color: #F5AF31;
+	border-color: #F5AF31;
+}
+#circleBar button:hover{
+	color: #fff;
+	background-color: #5a6268;
+	border-color: #545b62;
+}
+
+#sectionSkills hr{
+	background-color: #F5AF31;
+	margin-left: -1rem;
+}	
+/*=============================================
+=          SECTION EDUCATION     =
+=============================================*/
+#sectionEducation{
+	background-color: #2F2F2F;
+}
+
+#sectionEducation hr{
+	background-color: #F5AF31;
+	width: 5%;
+}
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:15px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #F5AF31;
+	transition:all ease 0.3s;
+}
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #fff;
+	background: #F5AF31;
+}
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:400;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+	font-size: 15px;
+}
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color: lightgrey;
+}
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:10px;
+	height:10px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top: 48px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+}
+
+#progress-bar-container li.active:after {
+	background:black;
+}
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #eee;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: #F5AF31;
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #f3f3f3;
+	border-radius: 4px;
+	margin-bottom: 6rem;
+}
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	color:#333;
+	letter-spacing:1px;
+}
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:#777;
+}
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+#progress-content-section .section-content.active {
+	display:block;
+}
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+/*=============================================
+=          SECTION EXPERIENCE     =
+=============================================*/
+#sectionExperience{
+	background: linear-gradient(90deg, rgba(245,175,49,0.9500175070028011) 50%, rgba(42,42,42,1) 50%);
+
+}
+#sectionExperience .experience{
+	color: #2F2F2F;
+}
+#sectionExperience .experience hr{
+	background-color: #2F2F2F;
+	width: 10%;
+}
+#sectionExperience .projects{
+	color: #F5AF31;
+} 
+#sectionExperience .projects hr{
+	background-color: #F5AF31;
+	width: 10%;
+}
+#sectionExperience .projects .sectionIcon{
+	/*min-height: 20vh;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+	box-sizing: border-box;
+
+}
+#sectionExperience .contenedorInfo1,
+#sectionExperience .contenedorInfo2,
+#sectionExperience .contenedorInfo3,
+#sectionExperience .contenedorInfo4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#sectionExperience .card1,
+#sectionExperience .card2,
+#sectionExperience .card3,
+#sectionExperience .card4{
+	transition: all 0.5s ease;
+	transform-style: preserve-3d;
+	width: 100%;
+	border-radius: 30px;
+	padding: 0rem 2rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+#sectionExperience .icono1,
+#sectionExperience .icono2,
+#sectionExperience .icono3,
+#sectionExperience .icono4{
+	min-height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#sectionExperience .icono1 img,
+#sectionExperience .icono2 img,
+#sectionExperience .icono3 img,
+#sectionExperience .icono4 img{
+	width: 3rem;
+	transition: all 0.5s ease-out;
+}
+#sectionExperience .info1 h1,
+#sectionExperience .info2 h1,
+#sectionExperience .info3 h1,
+#sectionExperience .info4 h1{
+	font-family: 'Cairo', sans-serif;
+	font-size: 1rem;
+	transition: all 0.75s ease-out;
+	color: #F5AF31;
+}
+#sectionExperience .info3 h1,
+#sectionExperience .info4 h1{
+	margin-top: -2rem;
+}
+#sectionExperience .info1 h3,
+#sectionExperience .info2 h3,
+#sectionExperience .info3 h3,
+#sectionExperience .info4 h3{
+	font-family: 'Cairo', sans-serif;
+	font-size: 13px;
+	padding: 0rem 0rem;
+	font-weight: lighter;
+	transition: all 0.75s ease-out;
+	color: #F5AF31;
+}
+#sectionExperience .experience li{
+	margin-bottom: -10px;
+	margin-left: -1rem;
+}
+#sectionExperience .experience span{
+	margin-left: 1rem;
+}
+#sectionExperience .experience{
+	color: #2F2F2F;
+}
+
+/*=============================================
+=          SECTION CONTACT ME     =
+=============================================*/
+#sectionContactMe{
+	background-color: #2F2F2F;
+}
+
+#sectionContactMe hr{
+	background-color: #F5AF31;
+	width: 5%;
+}
+#sectionContactMe button{
+	background-color: #F5AF31;
+	color:#2F2F2F;
+	border: none;
+}
+
+
+
+
+/*====================================================================================================
+PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
+====================================================================================================*/
+@media(min-width:1200px){
+	.rightHome img{
+		width: 12rem;
+	}
+}
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+@media(max-width:1199px) and (min-width:992px) {
+
+	header .navbar-nav{
+		margin-right: -40px;
+	}
+	header ul li {
+		margin-left: 0px;
+	}
+	#sectionHome .rightHome img {
+		width: 27vh;
+		background-position: center;
+		margin-top: 7vh;
+		margin-left: 6rem;
+	}
+	
+	/*SECTION ABOUT ME--------------------*/
+	.leftAbout .marco {
+		border: 6px solid #F5AF31;
+		height: 50vh;
+		width: 37vh;
+		position: absolute;
+		margin-left: 4rem;
+		margin-top: 5rem;
+	}
+	.leftAbout img {
+		width: 36vh;
+		position: absolute;
+		z-index: 1;
+		margin-left: 6rem !important;
+		margin-top: 4rem;
+		border: 5px solid #3D3D3D;
+	}
+	.rightAbout img {
+		margin-left: 0rem;
+	}
+
+}
+/*====================================================================================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+====================================================================================================*/
+@media(max-width:991px) and (min-width:768px){
+	header .navbar{
+		float: left;
+		position: absolute;
+		z-index: 1;
+	}
+	header ul{
+		margin-left: 3.5rem;
+		margin-top: -2.5rem;
+		background-color: #F5AF31;
+	}
+	.navbar-light .navbar-toggler {
+		background-color: #F5AF31;
+		border: none;
+	}
+	.rightHome img {
+		margin-left: 0rem;
+	}
+
+	/*-------------ABOUT SECTION*/
+	.leftHome{
+		margin-top: 35vh;
+	}
+	.leftHome h1 {
+		font-size: 40px;
+	}
+	.leftHome h5 {
+		font-size: 25px;
+	}
+	.rightAbout h2{
+		text-align: initial;
+		margin-bottom: 4rem;
+		margin-top: -8rem;
+	}
+	.rightAbout p {
+		width: 100%;
+		padding: 10px;
+	}
+	.leftAbout .marco {
+		border: 4px solid #F5AF31;
+		height: 35vh;
+		width: 25vh;
+		margin-left: 1.8rem;
+		margin-top: 1rem;
+	}
+	.leftAbout img {
+		width: 23vh;
+		position: absolute;
+		margin-left: 3.5rem !important;
+		margin-top: 0.6rem;
+		border: 0px;
+	}
+	.rightAbout .col-1 hr{
+		display: none;
+	}
+	.rightAbout button{
+		margin-bottom: 1rem;
+		margin-left: 0rem;
+	}
+	.rightAbout{
+		margin-bottom: 2rem;
+	}
+	.rightAbout img {
+		width: 30px;
+		margin-left: 0rem;
+	}
+	/* SECTION SKILL--------------------------*/
+	#circleBar button{
+		display: none;
+	}
+	#sectionSkills .col-2{
+		display: none;
+	}
+	#circleBar .round {
+		margin-top: 10px;
+	}
+	/* SECTION EDUCATION--------------------------*/
+	#sectionEducation .step02{
+		width: 11%;
+	}
+	#sectionEducation .step03{
+		width: 28%;
+	}
+	/* SECTION EXPERIENCE--------------------------*/
+	#sectionExperience .experience img{
+		display: none;
+	}
+
+	ul.list-group.text-justify.mr-5 {
+		width: 100%;
+	}
+}
+/*====================================================================================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+====================================================================================================*/
+@media(max-width:767px){
+
+	.col-xs-12{width:100%;}
+	.col-xs-11{width:91.66666667%;}
+	.col-xs-10{width:83.33333333%;}
+	.col-xs-9{width:75%;}
+	.col-xs-8{width:66.66666667%;}
+	.col-xs-7{width:58.33333333%;}
+	.col-xs-6{width:50%;}
+	.col-xs-5{width:41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+	.col-xs-0 {display:none;}
+
+	header .navbar{
+		float: left;
+		position: absolute;
+		z-index: 1;
+	}
+	header ul{
+		margin-left: 8rem;
+		margin-top: -3rem;
+		background-color: #F5AF31;
+	}
+	.navbar-light .navbar-toggler {
+		background-color: #F5AF31;
+		border: none;
+	}
+	/*-------------ABOUT SECTION*/
+	.leftHome{
+		margin-top: 25vh;
+	}
+	.leftHome h1 {
+		font-size: 40px;
+	}
+	.leftHome h5 {
+		font-size: 25px;
+	}
+	.rightHome img {
+		width: 20vh;
+		margin-top: 22vh;
+		margin-left: 1.5rem;
+	}
+	.rightAbout h2{
+		text-align: center;
+		margin-bottom: 20rem;
+		margin-top: -24rem;
+	}
+	.rightAbout p {
+		width: 100%;
+		padding: 10px;
+	}
+	.leftAbout .marco {
+		border: 4px solid #F5AF31;
+		height: 32vh;
+		width: 25vh;
+		margin-left: 4.8rem;
+		margin-top: 2rem;
+	}
+	.leftAbout img {
+		width: 23vh;
+		position: absolute;
+		margin-left: 5.5rem !important;
+		margin-top: 1.6rem;
+		border: 0px;
+	}
+	.rightAbout .col-1 hr{
+		display: none;
+	}
+	.rightAbout button{
+		margin-bottom: 1rem;
+	}
+	.rightAbout{
+		margin-bottom: 2rem;
+	}
+	/* SECTION SKILL-----------------*/
+	#sectionSkills .mt-1 {
+		text-align: center;
+	}
+	#sectionSkills .mt-1 hr{
+		display: none;
+	}
+	#circleBar {
+		margin-top: 0px;
+	}
+	#circleBar button{
+		display: none;
+	}
+	#circleBar .round {
+		margin-bottom: -23px;
+	}
+	#circleBar .lastSkill{
+		margin-bottom: 2.5rem;
+	}
+	/* SECTION EDUCATION-----------------*/
+	#sectionEducation .mt-5 h2{
+		margin-top: 0rem !important;
+		margin-bottom: -1rem;
+	}
+	#sectionEducation hr{
+		display: none;
+	}
+	#sectionEducation ul li .step-inner{
+		display: none;
+	}
+
+	#sectionEducation #progress-content-section {
+		margin-bottom: 3rem;
+	}
+	/* SECTION EXPERIENCE-----------------*/
+	#sectionExperience .experience{
+		background: #F5AF31;
+		margin-top: 0rem !important;
+	}
+	#sectionExperience .experience h2{
+
+		margin-bottom: 3rem;
+	}
+	#sectionExperience .job1 .col-xs-12,
+	#sectionExperience .job2 .col-xs-12{
+		text-align: center;
+	}
+	#sectionExperience h4{
+		display: none;
+	}
+	#sectionExperience hr{
+		display: none;
+	}
+	#sectionExperience .job1 img,
+	#sectionExperience .job2 img{
+		width: 40% !important;
+	}
+	#sectionExperience h5{
+		font-size: 1.1rem;	
+	}
+	#sectionExperience .job2 .col-xs-12{
+		margin-top: 10px;
+	}
+	ul.list-group.text-justify.mr-5 {
+		margin-bottom: 2rem;
+	}
+	#sectionExperience .projects{
+		background: rgba(42,42,42,1);
+		margin-top: -3rem !important;
+	}
+	#sectionExperience .projects .contenedorInfo4 {
+		margin-bottom: 1rem;
+	}
+	#sectionExperience .info3 h1, #sectionExperience .info4 h1 {
+		margin-top: -1rem;
+	}
+	#sectionContactMe form{
+		padding: 0rem !important;
+	}
+}
